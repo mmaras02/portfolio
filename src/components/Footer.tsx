@@ -1,7 +1,4 @@
-type FooterProps = {
-
-}
-export const Footer = ({ }: FooterProps) => {
+export const Footer = () => {
     return (
         <footer className="bg-gray-800 text-white py-12 relative z-20">
             <div className="container mx-auto px-6">
