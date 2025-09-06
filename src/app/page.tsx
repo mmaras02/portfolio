@@ -86,7 +86,7 @@ export default function Home() {
       <Projects sectionsRef={sectionsRef} />
       <Education sectionsRef={sectionsRef} />
 
-      <Footer sectionsRef={sectionsRef} />
+      <Footer />
     </div>
   );
 }

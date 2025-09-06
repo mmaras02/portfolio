@@ -2,9 +2,8 @@ type OtherProjectsProps = {
     title: string;
     description: string;
     tech: string[];
-    features?: string[];
 }
-export const OtherProjects = ({ title, description, tech, features }: OtherProjectsProps) => {
+export const OtherProjects = ({ title, description, tech }: OtherProjectsProps) => {
     return (
         <div>
             <li

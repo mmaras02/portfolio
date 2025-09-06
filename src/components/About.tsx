@@ -18,7 +18,7 @@ export const About = ({ sectionsRef }: AboutProps) => {
             <div className="container mx-auto px-20 flex flex-col md:flex-row items-center justify-evenly">
                 <div className="md:w-1/2 mb-12 md:mb-0">
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-                        Hi, I'm <span className="text-violet-500">{user.name}</span>
+                        Hi, I am <span className="text-violet-500">{user.name}</span>
                     </h1>
 
                     {user.about.map((text, idx) => (

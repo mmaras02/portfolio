@@ -1,8 +1,7 @@
 type FooterProps = {
-    sectionsRef: React.RefObject<{ [key: string]: HTMLElement | null }>;
 
 }
-export const Footer = ({ sectionsRef }: FooterProps) => {
+export const Footer = ({ }: FooterProps) => {
     return (
         <footer className="bg-gray-800 text-white py-12 relative z-20">
             <div className="container mx-auto px-6">
