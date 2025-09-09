@@ -41,7 +41,6 @@ export const projects = [
       'Follow/unfollow system',
       'Secure login and user management',
     ],
-    link: 'https://socialmedia-demo.com',
     github: 'https://github.com/yourusername/socialmedia',
   },
   {

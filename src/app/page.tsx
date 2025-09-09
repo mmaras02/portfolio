@@ -28,7 +28,7 @@ export default function Home() {
     const observerOptions = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.5,
+      threshold: 0.25,
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -63,13 +63,13 @@ export default function Home() {
     <div className="min-h-screen bg-slate-900 overflow-hidden relative">
 
       <div
-        className="fixed pointer-events-none z-10 rounded-full bg-gradient-to-r from-blue-400/20 to-purple-500/20 blur-3xl"
+        className="fixed pointer-events-none z-10 rounded-full bg-gradient-to-r from-blue-400/20 to-violet-500/20 blur-3xl"
         style={{
-          width: '300px',
-          height: '300px',
+          width: '250px',
+          height: '250px',
           left: mousePosition.x - 150,
           top: mousePosition.y - 150,
-          transition: 'left 0.1s ease-out, top 0.1s ease-out',
+          transition: 'left ease-out, top ease-out',
           zIndex: 10,
         }}
       />
@@ -81,7 +81,8 @@ export default function Home() {
         setMenuOpen={setMenuOpen}
       />
 
-      <About sectionsRef={sectionsRef} />
+      <About sectionsRef={sectionsRef}
+        scrollToSection={scrollToSection} />
       <TechStack sectionsRef={sectionsRef} />
       <Projects sectionsRef={sectionsRef} />
       <Education sectionsRef={sectionsRef} />

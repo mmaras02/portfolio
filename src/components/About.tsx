@@ -4,9 +4,10 @@ import { IoMail } from "react-icons/io5";
 
 type AboutProps = {
     sectionsRef: React.RefObject<{ [key: string]: HTMLElement | null }>;
+    scrollToSection: (sectionId: string) => void;
 };
 
-export const About = ({ sectionsRef }: AboutProps) => {
+export const About = ({ sectionsRef, scrollToSection }: AboutProps) => {
     return (
         <section
             id="about"
@@ -52,19 +53,20 @@ export const About = ({ sectionsRef }: AboutProps) => {
                         </a>
                     </div>
 
-                    <div className="flex space-x-4">
-                        <button className="px-6 py-3 bg-violet-500 text-white rounded-lg font-medium hover:bg-violet-800 transition-colors">
+                    <div className="flex space-x-4"
+                        onClick={() => scrollToSection('projects')}>
+                        <button className="px-6 py-3 border border-violet-500 text-violet-500 rounded-lg font-medium hover:bg-blue-50 transition-colors">
                             View Projects
                         </button>
-                        <button className="px-6 py-3 border border-violet-500 text-violet-500 rounded-lg font-medium hover:bg-blue-50 transition-colors">
+                        {/*<button className="px-6 py-3 border border-violet-500 text-violet-500 rounded-lg font-medium hover:bg-blue-50 transition-colors">
                             Contact Me
-                        </button>
+                        </button>*/}
                     </div>
                 </div>
 
                 <div className="md:w-2/5">
                     <div className="relative w-90 h-90 mx-auto animate-float">
-                        <div className="absolute inset-0 rounded-full bg-gradient-to-br from-violet-500 to-purple-600 p-0.5">
+                        <div className="absolute inset-0 rounded-full ">
                             <img
                                 src={user.image}
                                 alt={user.name}
