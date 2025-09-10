@@ -14,11 +14,11 @@ export const About = ({ sectionsRef, scrollToSection }: AboutProps) => {
             ref={(el) => {
                 sectionsRef.current["about"] = el;
             }}
-            className="flex items-center pt-16 relative z-20 my-10 lg:my-30"
+            className="flex items-center pt-16 relative z-20 my-10 lg:my-25"
         >
             <div className="container mx-auto px-6 lg:px-20 flex flex-col-reverse lg:flex-row items-center justify-evenly">
                 <div className="w-full lg:w-3/4 xl:w-2/3 mb-12 md:mb-0">
-                    <h1 className="text-4xl md:text-5xl md:text-center md:mt-10 lg:text-6xl font-bold mb-6">
+                    <h1 className="text-4xl md:text-5xl md:text-center lg:text-start md:mt-10 lg:text-6xl font-bold mb-6">
                         Hi, I am <br className="block md:hidden" />
                         <span className="text-violet-500">{user.name}</span>
                     </h1>
