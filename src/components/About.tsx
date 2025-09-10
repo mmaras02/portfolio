@@ -14,11 +14,11 @@ export const About = ({ sectionsRef, scrollToSection }: AboutProps) => {
             ref={(el) => {
                 sectionsRef.current["about"] = el;
             }}
-            className="flex items-center pt-16 relative z-20 my-10 md:my-30"
+            className="flex items-center pt-16 relative z-20 my-10 lg:my-30"
         >
-            <div className="container mx-auto px-6 md:px-20 flex flex-col-reverse md:flex-row items-center justify-evenly">
-                <div className="md:w-1/2 mb-12 md:mb-0">
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+            <div className="container mx-auto px-6 lg:px-20 flex flex-col-reverse lg:flex-row items-center justify-evenly">
+                <div className="w-full lg:w-3/4 xl:w-2/3 mb-12 md:mb-0">
+                    <h1 className="text-4xl md:text-5xl md:text-center md:mt-10 lg:text-6xl font-bold mb-6">
                         Hi, I am <br className="block md:hidden" />
                         <span className="text-violet-500">{user.name}</span>
                     </h1>
@@ -29,7 +29,7 @@ export const About = ({ sectionsRef, scrollToSection }: AboutProps) => {
                         </p>
                     ))}
 
-                    <div className="flex justify-center pt-10 md:justify-start space-x-6 mb-8">
+                    <div className="flex justify-center pt-10 lg:justify-start space-x-6 mb-8">
                         <a
                             href={user.socials.github}
                             target="_blank"
@@ -54,7 +54,7 @@ export const About = ({ sectionsRef, scrollToSection }: AboutProps) => {
                         </a>
                     </div>
 
-                    <div className="flex justify-center md:justify-start space-x-4"
+                    <div className="flex justify-center lg:justify-start space-x-4"
                         onClick={() => scrollToSection('projects')}>
                         <button className="px-6 py-3 border border-violet-500 text-violet-500 rounded-lg font-medium hover:bg-blue-50 transition-colors">
                             View Projects
@@ -66,7 +66,7 @@ export const About = ({ sectionsRef, scrollToSection }: AboutProps) => {
                 </div>
 
                 <div className="md:w-2/5 mb-8 md:mb-0">
-                    <div className="relative w-55 h-55 md:w-90 md:h-90 mx-auto animate-float">
+                    <div className="relative w-55 h-55 lg:w-90 lg:h-90 mx-auto animate-float">
                         <div className="absolute inset-0 rounded-full">
                             <img
                                 src={user.image}
