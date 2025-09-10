@@ -14,7 +14,7 @@ export const Projects = ({ sectionsRef }: ProjectsProps) => {
             ref={(el) => {
                 sectionsRef.current['projects'] = el;
             }}
-            className="py-20 container mx-auto px-30">
+            className="py-20 container mx-auto px-5 lg:px-30">
 
             <Title title="Projects" />
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">

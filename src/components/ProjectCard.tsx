@@ -19,18 +19,17 @@ export const ProjectCard = ({
 }: ProjectCardProps) => {
     return (
         <div className="bg-slate-800/50 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-1 overflow-hidden z-100">
-            <div className="w-full aspect-[16/9] rounded-xl overflow-hidden">
+            <div className="w-full rounded-xl overflow-hidden flex items-center justify-center p-2">
                 <img
                     src={image}
                     alt={title}
-                    className="w-[90%] h-full object-contain mx-auto"
+                    className="h-full w-auto object-contain rounded-xl"
                 />
             </div>
 
-
             <div className="p-6">
-                <h3 className="text-2xl font-bold text-white mb-2">{title}</h3>
-                <p className="text-slate-400 mb-4">{description}</p>
+                <h3 className="text-md md:text-2xl font-bold text-white mb-2">{title}</h3>
+                <p className="text-slate-400 mb-4 text-sm md:text-md">{description}</p>
 
                 <div className="flex flex-wrap gap-2 mb-4">
                     {tech.map((t, i) => (
@@ -56,7 +55,7 @@ export const ProjectCard = ({
                             href={github}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="px-4 py-2 border border-violet-500 text-violet-500 rounded-lg hover:bg-violet-50 transition-colors"
+                            className="py-1 px-4 md:py-2 border border-violet-500 text-violet-500 rounded-lg hover:bg-violet-50 transition-colors"
                         >
                             Code
                         </a>
@@ -67,7 +66,7 @@ export const ProjectCard = ({
                             href={link}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="px-3 py-2 bg-violet-500 text-white rounded-lg hover:bg-violet-600 transition-colors"
+                            className="py-1 px-4 md:py-2 bg-violet-500 text-white rounded-lg hover:bg-violet-600 transition-colors"
                         >
                             Live Demo
                         </a>
