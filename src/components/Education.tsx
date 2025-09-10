@@ -14,7 +14,7 @@ export const Education = ({ sectionsRef }: EducationProps) => {
             ref={(el) => {
                 sectionsRef.current["education"] = el;
             }}
-            className="py-20 container mx-auto px-6 flex flex-col items-center"
+            className="pt-20 container mx-auto px-6 flex flex-col items-center"
         >
             <Title title="Education" />
 
@@ -25,9 +25,9 @@ export const Education = ({ sectionsRef }: EducationProps) => {
                     <div key={i} className="relative mb-10">
                         <div className="absolute -left-8 -translate-x-1/2 top-1 w-4 h-4 bg-violet-500 rounded-full" />
 
-                        <h3 className="text-xl font-semibold text-white">{item.degree}</h3>
+                        <h3 className="text-md md:text-xl font-semibold text-white">{item.degree}</h3>
                         <span className="block text-sm text-slate-400 mb-1">{item.period}</span>
-                        <p className="text-slate-300">{item.school}</p>
+                        <p className="text-xs md:text-base text-slate-300">{item.school}</p>
                     </div>
                 ))}
             </div>
