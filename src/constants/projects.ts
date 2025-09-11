@@ -2,14 +2,14 @@ export const projects = [
   {
     title: 'Coastal Booking',
     description:
-      'A coastal-themed booking platform for vacation rentals. Built with a focus on smooth UX, secure reservations, and a modern interface.',
+      'A coastal-themed booking platform for boats and tours. Designed for seamless reservations, secure payments, and an intuitive experience.',
     image: '/images/projects/coastal-booking.jpg',
     tech: ['Next.js', 'Nest.js', 'Prisma', 'Supabase', 'Tailwind CSS'],
     features: [
-      'User authentication & profiles',
-      'Property search and filtering',
-      'Secure booking system',
-      'Responsive design optimized for mobile',
+      'Boats and tours listings',
+      'Real-time availability calendar',
+      'Interactive maps integration',
+      'Booking & payment system',
     ],
     github: 'https://github.com/yourusername/coastal-booking',
   },
@@ -20,9 +20,9 @@ export const projects = [
     image: '/images/projects/snowflow.jpg',
     tech: ['React', 'TypeScript', 'Tailwind', 'OpenWeather API'],
     features: [
-      'Real-time snowfall & weather updates',
+      'Resort search and details',
       'Resort-specific forecasts',
-      'Mobile-first responsive UI',
+      'User reviews and ratings',
       'Favorites for quick access',
     ],
     link: 'https://snowflow-one.vercel.app/',
@@ -38,7 +38,7 @@ export const projects = [
     features: [
       'Post creation with images and captions',
       'Real-time likes and comments',
-      'Follow/unfollow system',
+      'Follow/unfollow, messaging system',
       'Secure login and user management',
     ],
     github: 'https://github.com/yourusername/socialmedia',
@@ -52,7 +52,7 @@ export const projects = [
     features: [
       'Random text prompts for practice',
       'Real-time speed (WPM) and accuracy tracking',
-      'Statistics dashboard with history of results',
+      'Graph of results',
       'Multiple difficulty levels and timer modes',
     ],
     link: 'https://typing-test-flame.vercel.app/',
