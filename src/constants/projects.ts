@@ -18,7 +18,7 @@ export const projects = [
     description:
       'A sleek weather and snowfall tracking app designed for skiers and snowboarders. Provides live conditions, forecasts, and resort updates in user-friendly interface.',
     image: '/images/projects/snowflow.jpg',
-    tech: ['React', 'TypeScript', 'Tailwind', 'OpenWeather API'],
+    tech: ['React', 'TypeScript', 'Supabase', 'OpenWeather API'],
     features: [
       'Resort search and details',
       'Resort-specific forecasts',
@@ -34,7 +34,7 @@ export const projects = [
     description:
       'A social media platform where users can share posts, follow friends, and interact in real-time. Focused on building community through intuitive features.',
     image: '/images/projects/social-media.jpg',
-    tech: ['React Native', 'Node.js', 'MongoDB', 'JWT Auth'],
+    tech: ['MongoDB', 'React', 'Express.js', 'Node.js'],
     features: [
       'Post creation with images and captions',
       'Real-time likes and comments',
@@ -48,7 +48,7 @@ export const projects = [
     description:
       'A web app that helps users improve typing speed and accuracy. Includes real-time feedback, detailed statistics, and customizable difficulty levels.',
     image: '/images/projects/typing-test.jpg',
-    tech: ['React', 'TypeScript', 'Tailwind CSS', 'Node.js'],
+    tech: ['React'],
     features: [
       'Random text prompts for practice',
       'Real-time speed (WPM) and accuracy tracking',
@@ -93,7 +93,7 @@ export const otherProjects = [
   {
     title: 'Memory Game',
     description: 'A fun card-flip memory game with score tracking.',
-    tech: ['JavaScript', 'HTML', 'CSS'],
+    tech: ['JavaScript', 'React'],
     github: 'https://github.com/mmaras02/memory-game',
   },
 ];
