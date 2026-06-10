@@ -5,7 +5,7 @@ export const user = {
     'I am a student developer who loves building intuitive web applications, exploring new technologies, and turning creative ideas into accessible tools.',
     'As a learner, I am curious and motivated by challenges — I love solving problems that combine logic and creativity. My goal is to grow into a well-rounded developer while contributing to projects that make a meaningful impact.',
   ],
-  image: '/images/profile3.JPG',
+  image: '/images/profile3.jpg',
   socials: {
     github: 'https://github.com/mmaras02',
     linkedin: 'https://www.linkedin.com/in/mia-marasovic-870bb226b/',
