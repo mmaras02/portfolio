@@ -1,8 +1,10 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --accent: rgb(144, 103, 198);
+  --pink-accent: rgb(245, 116, 185);
 }
 
 @theme inline {
@@ -14,8 +16,10 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: rgb(23, 7, 43);
     --foreground: #ededed;
+    --accent: rgb(144, 103, 198);
+    --pink-accent: rgb(245, 116, 185);
   }
 }
 
@@ -23,4 +27,30 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.bg-transparent {
+  background-color: rgba(29, 4, 61, 0.3);
+}
+
+.bg-accent {
+  background-color: var(--accent);
+}
+
+.kuAYXS {
+  width: 80%;
+  height: 1px;
+  background: linear-gradient(
+    64.5deg,
+    rgb(245, 116, 185) 14.7%,
+    rgb(89, 97, 223) 88.7%
+  );
+}
+
+.text-pink-accent {
+  color: var(--pink-accent);
 }

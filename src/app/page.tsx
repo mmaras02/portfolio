@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import { About } from '@/components/About';
 import { Education } from '@/components/Education';
@@ -6,6 +6,7 @@ import { Footer } from '@/components/Footer';
 import { Navbar } from '@/components/Navbar';
 import { Projects } from '@/components/Projects';
 import { TechStack } from '@/components/TechStack';
+import { WorkExperience } from '@/components/Work';
 import { useEffect, useRef, useState } from 'react';
 
 export default function Home() {
@@ -22,7 +23,6 @@ export default function Home() {
     window.addEventListener('mousemove', handleMouseMove);
     return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
-
 
   useEffect(() => {
     const observerOptions = {
@@ -60,8 +60,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-900 overflow-hidden relative">
-
+    <div className="min-h-screen overflow-hidden relative">
       <div
         className="fixed pointer-events-none z-10 rounded-full bg-gradient-to-r from-blue-400/20 to-violet-500/20 blur-3xl"
         style={{
@@ -81,9 +80,13 @@ export default function Home() {
         setMenuOpen={setMenuOpen}
       />
 
-      <About sectionsRef={sectionsRef}
-        scrollToSection={scrollToSection} />
+      <About sectionsRef={sectionsRef} scrollToSection={scrollToSection} />
+
+      <div>
+        <div className="kuAYXS mx-auto"></div>
+      </div>
       <TechStack sectionsRef={sectionsRef} />
+      <WorkExperience sectionsRef={sectionsRef} />
       <Projects sectionsRef={sectionsRef} />
       <Education sectionsRef={sectionsRef} />
 
