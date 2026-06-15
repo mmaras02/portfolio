@@ -25,7 +25,7 @@ export const ProjectCard = ({
           alt={title}
           className="
       w-full object-cover rounded-md
-      h-40 sm:h-52 md:h-64 lg:h-90
+      h-40 sm:h-52 md:h-90
       transition-transform duration-300 group-hover:scale-105
     "
         />
