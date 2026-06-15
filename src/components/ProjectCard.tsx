@@ -19,11 +19,15 @@ export const ProjectCard = ({
 }: ProjectCardProps) => {
   return (
     <div className="group bg-slate-800/30 rounded-md shadow-lg hover:shadow-xl hover:shadow-pink-accent/5 transition-all duration-300 hover:-translate-y-1 overflow-hidden border border-slate-700/50 hover:border-pink-accent/30">
-      <div className="w-full rounded-t-2xl overflow-hidden flex items-center justify-center p-4 bg-slate-900/50">
+      <div className="w-full rounded-t-2xl overflow-hidden flex items-center justify-center p-3 sm:p-4 bg-slate-900/50">
         <img
           src={image}
           alt={title}
-          className="h-90 w-full object-fill rounded-md group-hover:scale-102 transition-transform duration-300"
+          className="
+      w-full object-cover rounded-md
+      h-40 sm:h-52 md:h-64 lg:h-90
+      transition-transform duration-300 group-hover:scale-105
+    "
         />
       </div>
 
